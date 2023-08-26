@@ -13,15 +13,9 @@ daemonset:
   #     name: config-secret
   extraEnvs:
     - name: "ELASTICSEARCH_USERNAME"
-      valueFrom:
-        secretKeyRef:
-          name: elasticsearch-master-credentials
-          key: username
+      value: yeswanth
     - name: "ELASTICSEARCH_PASSWORD"
-      valueFrom:
-        secretKeyRef:
-          name: elasticsearch-master-credentials
-          key: password
+      value: Devops@123
   # Allows you to add any config files in /usr/share/filebeat
   extraVolumes: []
   # - name: extras
@@ -95,15 +89,9 @@ deployment:
   #     name: config-secret
   extraEnvs:
     - name: "ELASTICSEARCH_USERNAME"
-      valueFrom:
-        secretKeyRef:
-          name: elasticsearch-master-credentials
-          key: username
+      value: yeswanth
     - name: "ELASTICSEARCH_PASSWORD"
-      valueFrom:
-        secretKeyRef:
-          name: elasticsearch-master-credentials
-          key: password
+      value: Devops@123
   # Allows you to add any config files in /usr/share/filebeat
   extraVolumes: []
   # - name: extras
